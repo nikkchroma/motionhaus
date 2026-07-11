@@ -748,3 +748,49 @@ font-size:12px;
 }
 color:#bfbfbf;
 }
+
+/* ===========================
+   Cursor
+=========================== */
+
+.cursor{
+
+position:fixed;
+
+width:8px;
+
+height:8px;
+
+background:white;
+
+border-radius:50%;
+
+pointer-events:none;
+
+z-index:99999;
+
+transform:translate(-50%,-50%);
+
+}
+
+.cursor-follower{
+
+position:fixed;
+
+width:40px;
+
+height:40px;
+
+border:2px solid white;
+
+border-radius:50%;
+
+pointer-events:none;
+
+z-index:99998;
+
+transform:translate(-50%,-50%);
+
+transition:border .3s;
+
+}
