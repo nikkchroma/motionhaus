@@ -1,20 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotionHaus</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
+<title>MotionHaus | Creative Studio</title>
+
+<meta name="description" content="MotionHaus is a premium creative studio specializing in films, photography, branding and digital experiences.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r158/three.min.js"></script>
+
 </head>
 
 <body>
 
-    <h1>MOTIONHAUS</h1>
+<div id="loader">
 
-    <p>Premium Creative studio</p>
+<div class="loader-logo">
 
-    <script src="script.js"></script>
+MOTIONHAUS
+
+</div>
+
+<div class="loading-bar">
+
+<span></span>
+
+</div>
+
+</div>
+
+<nav>
+
+<div class="logo">
+
+MOTIONHAUS
+
+</div>
+
+<ul>
+
+<li><a href="#about">Studio</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#portfolio">Work</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<a href="#contact" class="btn-nav">
+
+Let's Talk
+
+</a>
+
+</nav>
+
+<section class="hero">
+
+<video autoplay muted loop playsinline>
+
+<source src="assets/videos/hero.mp4" type="video/mp4">
+
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<p>
+
+Creative Studio
+
+</p>
+
+<h1>
+
+Ideas
+
+<span>In</span>
+
+Motion.
+
+</h1>
+
+<div class="hero-buttons">
+
+<a href="#portfolio" class="primary">
+
+View Work
+
+</a>
+
+<a href="#about" class="secondary">
+
+Explore
+
+</a>
+
+</div>
+
+</div>
+
+<div class="scroll-indicator">
+
+Scroll
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<div class="left">
+
+<h2>
+
+We create visuals that leave an impression.
+
+</h2>
+
+</div>
+
+<div class="right">
+
+<p>
+
+MotionHaus is an independent creative studio based in Chennai.
+
+We produce cinematic films, photography, branding and digital experiences for ambitious brands, artists and communities.
+
+From automotive productions to fashion campaigns and commercial storytelling, every project is crafted with precision, emotion and bold creative direction.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="section-title">
+<p>What We Do</p>
+<h2>Creative Services</h2>
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>Creative Direction</h3>
+<p>Concepts, campaigns and storytelling that connect brands with people.</p>
+</div>
+
+<div class="service-card">
+<h3>Commercial Films</h3>
+<p>High-end cinematic productions for brands, products and businesses.</p>
+</div>
+
+<div class="service-card">
+<h3>Photography</h3>
+<p>Automotive, fashion, product, portrait and editorial photography.</p>
+</div>
+
+<div class="service-card">
+<h3>Brand Identity</h3>
+<p>Logos, visuals, brand systems and creative consulting.</p>
+</div>
+
+<div class="service-card">
+<h3>Social Media</h3>
+<p>Reels, campaigns, content strategy and visual storytelling.</p>
+</div>
+
+<div class="service-card">
+<h3>Post Production</h3>
+<p>Editing, color grading, motion graphics and visual effects.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section id="portfolio">
+
+<div class="section-title">
+<p>Selected Work</p>
+<h2>Featured Projects</h2>
+</div>
+
+<div class="portfolio-grid">
+
+<div class="project">
+<img src="assets/images/project1.jpg" alt="">
+<div class="project-overlay">
+<h3>Ducati Chennai</h3>
+<p>Commercial Campaign</p>
+</div>
+</div>
+
+<div class="project">
+<img src="assets/images/project2.jpg" alt="">
+<div class="project-overlay">
+<h3>Madras Driven</h3>
+<p>Event Coverage</p>
+</div>
+</div>
+
+<div class="project">
+<img src="assets/images/project3.jpg" alt="">
+<div class="project-overlay">
+<h3>Drift Night</h3>
+<p>Creative Production</p>
+</div>
+</div>
+
+<div class="project">
+<img src="assets/images/project4.jpg" alt="">
+<div class="project-overlay">
+<h3>Editorial</h3>
+<p>Photography</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROCESS ================= -->
+
+<section class="process">
+
+<div class="section-title">
+<p>How We Work</p>
+<h2>Our Process</h2>
+</div>
+
+<div class="process-grid">
+
+<div>
+<h3>01</h3>
+<p>Discover</p>
+</div>
+
+<div>
+<h3>02</h3>
+<p>Concept</p>
+</div>
+
+<div>
+<h3>03</h3>
+<p>Create</p>
+</div>
+
+<div>
+<h3>04</h3>
+<p>Deliver</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CLIENTS ================= -->
+
+<section class="clients">
+
+<div class="section-title">
+<p>Trusted By</p>
+<h2>Brands & Communities</h2>
+</div>
+
+<div class="client-row">
+
+<span>Ducati</span>
+<span>Madras Driven</span>
+<span>MotionHaus Originals</span>
+<span>Your Client</span>
+<span>Your Client</span>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="contact-box">
+
+<h2>Let's Build Something Extraordinary.</h2>
+
+<p>
+Have a project in mind?
+Let's create something unforgettable.
+</p>
+
+<a href="mailto:hello@motionhaus.co" class="contact-btn">
+
+Start a Project
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-logo">
+
+MOTIONHAUS
+
+</div>
+
+<p>
+
+Creative Studio © 2026
+
+</p>
+
+<div class="socials">
+
+<a href="https://instagram.com/themotionhaus.co">Instagram</a>
+
+<a href="#">Behance</a>
+
+<a href="#">YouTube</a>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
